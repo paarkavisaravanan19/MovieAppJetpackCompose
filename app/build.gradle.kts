@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.example.movieappapi"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.movieappapi"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -69,9 +69,11 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
     //Retrofit
+
+    implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
-    implementation("com.squareup.retrofit2:convertor-gson:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     //coil
     implementation("io.coil-kt:coil-compose:1.3.2")
 }
